@@ -26,7 +26,6 @@ const ChatRoom = () => {
 								Keluar Room
 							</button>
 						) : null}
-
 						<div className="card">
 							<ChatBox />
 							<SendMessage />
