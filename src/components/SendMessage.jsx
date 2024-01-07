@@ -5,16 +5,13 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
 const SendMessage = () => {
 	const [value, setValue] = useState("");
-
 	const { currentUser } = UserAuth();
 	const HandleSendMessage = async (e) => {
 		e.preventDefault();
-
 		if (value.trim() === "") {
 			alert("Ngga boleh pesan kosong anjir!");
 			return;
 		}
-
 		try {
 			const { uid, displayName, photoURL } = currentUser;
 			await addDoc(collection(db, "messages"), {
@@ -27,7 +24,6 @@ const SendMessage = () => {
 		} catch (error) {
 			console.log(error.message);
 		}
-
 		console.log(value);
 		setValue("");
 	};

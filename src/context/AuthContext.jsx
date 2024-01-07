@@ -1,10 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-
 import { useContext, useState, createContext, useEffect } from "react";
 import { GoogleAuthProvider, onAuthStateChanged, signInWithRedirect, signOut } from "firebase/auth";
 import { auth } from "../firebase";
-
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {

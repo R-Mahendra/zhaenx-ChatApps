@@ -6,9 +6,7 @@ import { collection, query, where, onSnapshot, orderBy, limit } from "firebase/f
 import { db } from "../firebase";
 const ChatBox = () => {
 	const [messages, setMessages] = useState([]);
-
 	const messageRef = useRef();
-
 	const ScrollBottom = () => {
 		messageRef.current.scrollIntoView({ behavior: "smooth" });
 	};

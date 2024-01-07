@@ -2,7 +2,6 @@
 import React from "react";
 import SendMessage from "../components/SendMessage";
 import ChatBox from "../components/ChatBox";
-
 import { UserAuth } from "../context/AuthContext";
 
 const ChatRoom = () => {
