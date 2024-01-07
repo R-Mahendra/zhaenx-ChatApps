@@ -23,9 +23,7 @@
 
 body {
 	min-height: 100vh;
-	background: #7f7fd5;
-	background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
-	background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+	background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
 }
 
 #login,
@@ -39,7 +37,7 @@ body {
 #chatroom .card {
 	min-height: 95vh;
 	position: relative;
-	padding: 3rem 1rem;
+	padding: 3rem 0.5rem;
 	background: transparent;
 	/* border: 3px solid var(--zx-yellow-dark); */
 	border: none;
@@ -47,7 +45,7 @@ body {
 
 #SendMessage form {
 	position: fixed;
-	width: 60%;
+	width: 55%;
 	bottom: 1%;
 	left: 50%;
 	transform: translateX(-50%);
@@ -55,14 +53,17 @@ body {
 	padding: 1.8rem 1rem;
 	border-radius: 20px;
 }
+#SendMessage {
+	margin-top: 3.5rem;
+}
 #SendMessage input {
 	margin-right: 8px;
 }
 
 #Message .user_img_msg {
-	max-height: 70px;
-	max-width: 70px;
-	border: 1.5px solid #f5f6fa;
+	max-height: 50px;
+	max-width: 50px;
+	border: 2px solid var(--zx-text-white);
 	/* margin-top: 1rem; */
 }
 
@@ -70,16 +71,21 @@ body {
 	border-bottom-right-radius: 25px;
 	border-bottom-left-radius: 25px;
 	border-top-right-radius: 25px;
-	background-color: #aee2ee;
-	padding: 10px;
+	background-color: #0e7490;
+	padding: 12px;
 	position: relative;
-	min-width: 150px;
-	height: auto;
-	padding: 1rem;
-	margin: 0rem 1rem 1rem 0.5rem;
-
+	min-width: 165px;
+	height: 2.5rem;
+	margin: 0 0 0 0.5rem;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	color: var(--zx-text-white);
 }
+#Message {
+	margin-bottom: 2rem;
+}
+
 #Message .msg_time {
 	position: absolute;
 	font-size: 13px;
@@ -89,14 +95,14 @@ body {
 	display: flex;
 	font-weight: 500;
 }
-#Message .msg_cotainer p {
+#Message .msg_cotainer .nickName {
 	min-width: 100%;
 	position: absolute;
-	font-size: 14px;
-	bottom: 100%;
+	font-size: 12px;
+	bottom: 105%;
 	right: 0%;
 	margin-bottom: 0;
-	font-weight: 600;
+	font-weight: 400;
 	font-style: italic;
 	font-family: var(--font-viga);
 	color: var(--zx-text-dark);
@@ -118,7 +124,13 @@ body {
 	color: var(--bg-primary);
 	background: var(--zx-text-white);
 	cursor: pointer;
+	transition: 0.3s ease;
 }
+
+#zx__ButtonLogin .zx__BtnLogin:hover {
+	transform: scale(0.97);
+}
+
 #zx__ButtonLogin {
 	display: flex;
 	justify-content: space-evenly;
@@ -126,25 +138,20 @@ body {
 	margin-top: 2rem;
 }
 
-#login .card{
+#login .card {
 	background: var(--bg-primary);
-	padding: 2rem .5rem;
+	padding: 2rem 0.5rem;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	border-radius: 20px;
 	border: 3px solid var(--zx-yellow);
 }
-#login .card .card-title{
+#login .card .card-title {
 	color: var(--zx-text-white);
 	font-family: var(--font-viga);
 	font-size: 2rem;
 }
-
-
-
-
-
 
 /* @media (max-width: 575.98px) { ... }
 
@@ -155,8 +162,7 @@ body {
 
 @media (max-width: 1199.98px) { ... } */
 
-@media (max-width: 991.98px) { 
-
+@media (max-width: 991.98px) {
 	#SendMessage form {
 		width: 90%;
 		left: 50%;

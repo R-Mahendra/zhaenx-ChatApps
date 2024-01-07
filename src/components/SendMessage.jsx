@@ -30,7 +30,7 @@ const SendMessage = () => {
 
 	return (
 		<>
-			<div className="row d-flex justify-content-center align-items-center mt-5" id="SendMessage">
+			<div className="row d-flex justify-content-center align-items-center" id="SendMessage">
 				<div className="col-lg-7">
 					<form className="d-flex" onSubmit={HandleSendMessage}>
 						<input className="form-control form-control-lg" type="text" placeholder="Tulis Pesan.!" aria-label=".form-control-lg" value={value} onChange={(e) => setValue(e.target.value)} />
