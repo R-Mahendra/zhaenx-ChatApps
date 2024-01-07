@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Poppins:wght@200;300;400;500;600;700;800&family=Viga&family=Wallpoet&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--font-default);
+}
+:root {
+	--bg-white: #e2e8f0;
+	--bg-primary: #6d28d9;
+	--bg-secondary: #4c1d95;
+	--zx-purple: #a78bfa;
+	--zx-text-white: #f1f5f9;
+	--zx-text-dark: #172554;
+	--zx-yellow-dark: #f59e0b;
+	--zx-yellow: #eab308;
+	--font-default: "Poppins", sans-serif;
+	--font-viga: "Viga", sans-serif;
+	--font-iceberg: "Iceberg", cursive;
+	--font-walpoet: "Wallpoet", sans-serif;
+	--font-twentieth-century: "Twentieth Century", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	background: #7f7fd5;
+	background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+	background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+#login,
+#chatroom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#chatroom .card {
+	min-height: 95vh;
+	position: relative;
+	padding: 3rem 1rem;
+	background: transparent;
+	/* border: 3px solid var(--zx-yellow-dark); */
+	border: none;
+}
+
+#SendMessage form {
+	position: fixed;
+	width: 60%;
+	bottom: 1%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--bg-primary);
+	padding: 1.8rem 1rem;
+	border-radius: 20px;
+}
+#SendMessage input {
+	margin-right: 8px;
+}
+
+#Message .user_img_msg {
+	max-height: 70px;
+	max-width: 70px;
+	border: 1.5px solid #f5f6fa;
+	/* margin-top: 1rem; */
+}
+
+#Message .msg_cotainer {
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: #aee2ee;
+	padding: 10px;
+	position: relative;
+	min-width: 150px;
+	height: auto;
+	padding: 1rem;
+	margin: 0rem 1rem 1rem 0.5rem;
+
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+#Message .msg_time {
+	position: absolute;
+	font-size: 13px;
+	top: 105%;
+	right: 3%;
+	margin-bottom: 0;
+	display: flex;
+	font-weight: 500;
+}
+#Message .msg_cotainer p {
+	min-width: 100%;
+	position: absolute;
+	font-size: 14px;
+	bottom: 100%;
+	right: 0%;
+	margin-bottom: 0;
+	font-weight: 600;
+	font-style: italic;
+	font-family: var(--font-viga);
+	color: var(--zx-text-dark);
+}
+#zx__ButtonLogin .zx__BtnLogin {
+	width: 255px;
+	display: flex;
+	padding: 0.6rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	align-items: center;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	gap: 0.75rem;
+	color: var(--bg-primary);
+	background: var(--zx-text-white);
+	cursor: pointer;
+}
+#zx__ButtonLogin {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+#login .card{
+	background: var(--bg-primary);
+	padding: 2rem .5rem;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-radius: 20px;
+	border: 3px solid var(--zx-yellow);
+}
+#login .card .card-title{
+	color: var(--zx-text-white);
+	font-family: var(--font-viga);
+	font-size: 2rem;
+}
+
+
+
+
+
+
+/* @media (max-width: 575.98px) { ... }
+
+@media (max-width: 767.98px) { ... }
+
+
+@media (max-width: 991.98px) { ... }
+
+@media (max-width: 1199.98px) { ... } */
+
+@media (max-width: 991.98px) { 
+
+	#SendMessage form {
+		width: 90%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
