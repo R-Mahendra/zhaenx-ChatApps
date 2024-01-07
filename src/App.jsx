@@ -2,7 +2,7 @@
 import React from "react";
 import "./styles/main.css";
 import Login from "./pages/Login";
-import ChatRoom from "./pages/ChatRoom"
+import Chatroom from "./pages/Chatroom"
 import { Routes, Route } from "react-router-dom";
 import { PrivateRoute } from "./routes/PrivateRoute";
 import { AuthProvider } from "./context/AuthContext";
@@ -16,7 +16,7 @@ const App = () => {
 					path="/Chat"
 					element={
 						<PrivateRoute>
-							<ChatRoom />
+							<Chatroom />
 						</PrivateRoute>
 					}
 				/>

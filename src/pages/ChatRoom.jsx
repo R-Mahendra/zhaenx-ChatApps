@@ -4,7 +4,7 @@ import SendMessage from "../components/SendMessage";
 import ChatBox from "../components/ChatBox";
 import { UserAuth } from "../context/AuthContext";
 
-const ChatRoom = () => {
+const Chatroom = () => {
 	const { currentUser, logout } = UserAuth();
 
 	const HandleLogout = async () => {
@@ -36,4 +36,4 @@ const ChatRoom = () => {
 	);
 };
 
-export default ChatRoom;
+export default Chatroom;
